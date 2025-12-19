@@ -95,15 +95,18 @@ const skillGroups = [
 
 export default function Skills() {
   return (
-    <section className="max-w-6xl mx-auto px-6 md:px-10 space-y-8">
-      <h2 className="text-2xl font-semibold">Skills</h2>
+    <section className="max-w-6xl mx-auto px-2 md:px-6 space-y-4">
+      <h2 className="text-2xl font-semibold text-center">Skills</h2>
 
-      <div className="space-y-6">
+      <div className="space-y-2 flex flex-col items-center">
         {skillGroups.map((group) => (
           <div
-            key={group.title}
-            className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm"
-          >
+  key={group.title}
+  className="w-full max-w-4xl  
+             bg-white dark:bg-gray-800
+             rounded-2xl p-3 shadow-sm"
+>
+
             {/* Header */}
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold">
@@ -114,11 +117,11 @@ export default function Skills() {
             </div>
 
             {/* Skills */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2">
               {group.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-4 py-1.5 rounded-full text-sm
+                  className="px-3 py-1 rounded-full text-sm leading-tight
                              bg-gray-100 dark:bg-gray-700
                              text-gray-800 dark:text-gray-200"
                 >

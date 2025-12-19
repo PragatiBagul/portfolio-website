@@ -27,7 +27,7 @@ import Header from "../components/Header";
 import Intro from "../components/Intro";
 import IntroVideo from "../components/IntroVideo";
 import ActionCards from "../components/ActionCards";
-
+import Objective from "../components/Objective";
 import About from "../sections/About";
 import Experience from "../sections/Experience";
 import Projects from "../sections/Projects";
@@ -61,6 +61,7 @@ export default function Home() {
       <section className="flex flex-col items-center text-center px-6">
         <Intro />
         <IntroVideo />
+        <Objective/>
       </section>
 
       {/* Action Cards (Tabs) */}
