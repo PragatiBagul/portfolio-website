@@ -32,6 +32,7 @@ import About from "../sections/About";
 import Experience from "../sections/Experience";
 import Projects from "../sections/Projects";
 import Skills from "../sections/Skills";
+import Blogs from "../sections/Blogs";
 import Contact from "../sections/Contact";
 import Footer from "../components/Footer";
 export default function Home() {
@@ -55,7 +56,7 @@ export default function Home() {
     <main className="relative min-h-screen bg-white dark:bg-gray-900 transition-colors">
       
       {/* Header */}
-      <Header />
+      {/* <Header /> */}
 
       {/* Hero */}
       <section className="flex flex-col items-center text-center px-6">
@@ -78,7 +79,7 @@ export default function Home() {
         {/* {active === "projects" && <Projects />} */}
         {active === "projects" && <h1>Work in Progress</h1>}
         {active === "skills" && <Skills />}
-        {/* {active === "fun" && <Fun />} */}
+        {active === "blog" && <Blogs />}
         {active === "contact" && <Contact />}
       </div>
       </div>

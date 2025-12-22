@@ -104,8 +104,8 @@ export default function Skills() {
           <div
   key={group.title}
   className="w-full max-w-4xl  
-             bg-white dark:bg-gray-800
-             rounded-2xl p-3 shadow-sm"
+             bg-white dark:bg-gray-1000
+             rounded-2xl p-3 shadow-md"
 >
 
             {/* Header */}

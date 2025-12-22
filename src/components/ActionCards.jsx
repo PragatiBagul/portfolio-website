@@ -5,7 +5,7 @@ const actions = [
   { key: "experience", label: "Experience", emoji: "💼", animation: "bounce" },
   { key: "projects", label: "Projects", emoji: "🧠", animation: "bounce" },
   { key: "skills", label: "Skills", emoji: "🛠️", animation: "bounce" },
-  // { key: "fun", label: "Fun", emoji: "✨", animation: "sparkle" },
+  { key: "blog", label: "Blogs", emoji: "📝", animation: "sparkle" },
   { key: "contact", label: "Contact", emoji: "📧", animation: "bounce" },
 ];
 

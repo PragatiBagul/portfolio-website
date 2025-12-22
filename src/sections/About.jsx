@@ -84,7 +84,7 @@ export default function About() {
           </a>
 
           <a
-            href="https://medium.com/@your-medium"
+            href="https://bagulpragati.medium.com"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700
