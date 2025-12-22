@@ -33,7 +33,7 @@ import Experience from "../sections/Experience";
 import Projects from "../sections/Projects";
 import Skills from "../sections/Skills";
 import Contact from "../sections/Contact";
-
+import Footer from "../components/Footer";
 export default function Home() {
   // which tab is active (null by default)
   const [active, setActive] = useState(null);
@@ -64,21 +64,26 @@ export default function Home() {
         <Objective/>
       </section>
 
+<div className="relative">
       {/* Action Cards (Tabs) */}
-      <ActionCards active={active} onSelect={setActive} />
+      <div className="sticky top-4 z-50">
+        <ActionCards active={active} onSelect={setActive} />
+      </div>
 
       {/* Scroll Target + Conditional Content */}
-      <div
-        ref={sectionRef}
-        className="scroll-mt-24 mt-24 pb-24"
-      >
+  <div className="mt-6 h-[calc(100vh-240px)]">
+    <div className="h-full overflow-y-auto">
         {active === "me" && <About />}
         {active === "experience" && <Experience />}
-        {active === "projects" && <Projects />}
+        {/* {active === "projects" && <Projects />} */}
+        {active === "projects" && <h1>Work in Progress</h1>}
         {active === "skills" && <Skills />}
         {/* {active === "fun" && <Fun />} */}
         {active === "contact" && <Contact />}
       </div>
+      </div>
+      </div>
+      <Footer />
     </main>
   );
 }

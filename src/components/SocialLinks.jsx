@@ -10,7 +10,7 @@ export default function SocialLinks() {
       <div className="flex gap-4">
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/your-linkedin"
+          href="https://www.linkedin.com/in/pragati-prashant-bagul/"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 rounded-full border border-gray-200 dark:border-gray-700
@@ -25,7 +25,7 @@ export default function SocialLinks() {
 
         {/* GitHub */}
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/PragatiBagul"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 rounded-full border border-gray-200 dark:border-gray-700
@@ -40,7 +40,7 @@ export default function SocialLinks() {
 
         {/* Medium */}
         <a
-          href="https://medium.com/@your-medium"
+          href="https://medium.com/@bagulpragati"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 rounded-full border border-gray-200 dark:border-gray-700

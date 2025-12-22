@@ -16,7 +16,7 @@ export default function Contact() {
           
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/pragati-prashant-bagul/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2
@@ -30,7 +30,7 @@ export default function Contact() {
 
           {/* Email */}
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:thepragatibagul@outlook.com"
             className="flex items-center justify-center gap-2
                        px-6 py-3 rounded-full
                        border border-gray-300 dark:border-gray-600

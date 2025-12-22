@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="max-w-6xl mx-auto px-6 md:px-10 space-y-10">
+    <section className="max-w-5xl mx-auto px-6 md:px-10">
       
       {/* About Me */}
       <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm">

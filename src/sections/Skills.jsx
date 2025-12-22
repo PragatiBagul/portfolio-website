@@ -95,8 +95,9 @@ const skillGroups = [
 
 export default function Skills() {
   return (
-    <section className="max-w-6xl mx-auto px-2 md:px-6 space-y-4">
-      <h2 className="text-2xl font-semibold text-center">Skills</h2>
+    <section className="max-w-5xl mx-auto px-6 md:px-10">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm">
+        <h2 className="text-2xl font-semibold mb-6">Skills</h2>
 
       <div className="space-y-2 flex flex-col items-center">
         {skillGroups.map((group) => (
@@ -131,6 +132,7 @@ export default function Skills() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

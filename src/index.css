@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.scroll-offset {
+  scroll-margin-top: 120px; /* action cards height + breathing space */
+}
+/* global section style */
+.section-common {
+  @apply px-6 py-12; /* horizontal + vertical spacing */
+}
