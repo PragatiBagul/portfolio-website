@@ -1,0 +1,190 @@
+[
+  {
+    "id": 1,
+    "category": "NLP",
+    "title": "Toxic Comment Classifier",
+    "tags": ["Python", "TF-IDF", "NLP", "Scikit-learn"],
+    "github": "https://github.com/PragatiBagul/Data-Science",
+    "description": "Multi-label NLP system for toxic comment classification.",
+    "details": {
+      "overview": "Built a system to detect toxic, obscene, threat, insult, and identity-hate comments from Wikipedia discussions.",
+      "problem": "Classify comments into multiple toxicity categories with heavy class imbalance.",
+      "approach": [
+        "Text preprocessing: cleaning, tokenization, lemmatization",
+        "TF-IDF with unigrams and bigrams",
+        "One-vs-Rest classification using Logistic Regression and SVM",
+        "Handled imbalance using class weights"
+      ],
+      "insights": [
+        "Bigrams improved detection of toxic phrases",
+        "Rare classes like threat are hardest to detect",
+        "Linear models perform efficiently on sparse text"
+      ],
+      "impact": "Achieved strong AUC-ROC and built a scalable moderation pipeline."
+    }
+  },
+  {
+    "id": 2,
+    "category": "ML / Geospatial",
+    "title": "Geo-Spatial Travel Time Prediction",
+    "tags": ["Python", "Regression", "GeoPy", "Scikit-learn"],
+    "github": "https://github.com/PragatiBagul/Data-Science",
+    "description": "Predict travel time using engineered geospatial features.",
+    "details": {
+      "overview": "Built a regression model predicting trip duration using location-based features.",
+      "problem": "Convert raw latitude/longitude into meaningful predictive features.",
+      "approach": [
+        "Haversine distance calculation",
+        "Bearing and Manhattan distance features",
+        "Feature interactions",
+        "Tree-based regression models"
+      ],
+      "insights": [
+        "Haversine distance is strongest predictor",
+        "Direction adds useful signal",
+        "Tree models outperform linear models"
+      ],
+      "impact": "Demonstrated importance of feature engineering in geospatial ML systems."
+    }
+  },
+  {
+    "id": 3,
+    "category": "ML / Finance",
+    "title": "Credit Risk Modeling with XGBoost",
+    "tags": ["Python", "XGBoost", "Finance", "AUC-ROC"],
+    "github": "https://github.com/PragatiBagul/Data-Science",
+    "description": "Predict loan default risk using gradient boosting.",
+    "details": {
+      "overview": "Built a credit scoring model predicting financial distress.",
+      "problem": "Handle severe class imbalance in financial datasets.",
+      "approach": [
+        "Data cleaning and imputation",
+        "XGBoost modeling",
+        "Hyperparameter tuning",
+        "Class imbalance handling using scale_pos_weight"
+      ],
+      "insights": [
+        "Delinquency history is strongest predictor",
+        "Income and age significantly influence risk",
+        "Class imbalance handling is critical"
+      ],
+      "impact": "Improved risk prediction accuracy for financial decision-making."
+    }
+  },
+  {
+    "id": 4,
+    "category": "ML",
+    "title": "Dry Bean Classification",
+    "tags": ["SVM", "KNN", "Classification"],
+    "github": "https://github.com/PragatiBagul/Data-Science",
+    "description": "Multi-class classification of bean varieties.",
+    "details": {
+      "overview": "Classified 7 bean types using morphological features.",
+      "problem": "Differentiate classes with overlapping features.",
+      "approach": [
+        "Feature scaling",
+        "Model comparison (KNN, SVM, Logistic Regression)",
+        "Confusion matrix evaluation"
+      ],
+      "insights": [
+        "Shape features are highly discriminative",
+        "SVM performs best",
+        "Scaling improves KNN significantly"
+      ],
+      "impact": "Demonstrated effectiveness of ML in agricultural classification."
+    }
+  },
+  {
+    "id": 5,
+    "category": "Unsupervised Learning",
+    "title": "PCA on Wine Dataset",
+    "tags": ["PCA", "Dimensionality Reduction"],
+    "github": "https://github.com/PragatiBagul/Data-Science",
+    "description": "Reduce dimensionality for visualization and clustering.",
+    "details": {
+      "overview": "Reduced 13 features into 2D space for visualization.",
+      "problem": "Visualize high-dimensional chemical data.",
+      "approach": [
+        "Standardization",
+        "PCA decomposition",
+        "Scree plot analysis",
+        "2D visualization"
+      ],
+      "insights": [
+        "Wine classes are separable in PCA space",
+        "Few features explain majority variance",
+        "Feature redundancy exists"
+      ],
+      "impact": "Improved interpretability of high-dimensional datasets."
+    }
+  },
+  {
+    "id": 6,
+    "category": "Clustering",
+    "title": "DBSCAN Customer Segmentation",
+    "tags": ["DBSCAN", "Clustering"],
+    "github": "https://github.com/PragatiBagul/Data-Science",
+    "description": "Segment customers using density-based clustering.",
+    "details": {
+      "overview": "Clustered customers based on spending behavior.",
+      "problem": "Identify natural groupings without predefined clusters.",
+      "approach": [
+        "Feature scaling",
+        "K-distance plot for epsilon",
+        "DBSCAN clustering"
+      ],
+      "insights": [
+        "DBSCAN detects outliers effectively",
+        "Clusters represent customer segments",
+        "Better than K-Means for irregular shapes"
+      ],
+      "impact": "Enabled meaningful customer segmentation for business insights."
+    }
+  },
+  {
+    "id": 7,
+    "category": "EDA",
+    "title": "Adult Census Income Analysis",
+    "tags": ["EDA", "Visualization"],
+    "github": "https://github.com/PragatiBagul/Data-Science",
+    "description": "Analyze income inequality factors.",
+    "details": {
+      "overview": "Explored demographic factors affecting income.",
+      "problem": "Identify drivers of income >50K.",
+      "approach": [
+        "Univariate and bivariate analysis",
+        "Correlation and categorical analysis"
+      ],
+      "insights": [
+        "Education is strongest predictor",
+        "Gender disparity is significant",
+        "Occupation impacts income heavily"
+      ],
+      "impact": "Provided insights into socioeconomic inequality."
+    }
+  },
+  {
+    "id": 8,
+    "category": "EDA",
+    "title": "Mental Health in Tech Survey",
+    "tags": ["EDA", "Survey Analysis"],
+    "github": "https://github.com/PragatiBagul/Data-Science",
+    "description": "Analyze workplace mental health trends.",
+    "details": {
+      "overview": "Studied mental health trends in tech professionals.",
+      "problem": "Understand treatment patterns and employer support.",
+      "approach": [
+        "Data cleaning",
+        "Categorical analysis",
+        "Cross-feature comparisons"
+      ],
+      "insights": [
+        "Employer support increases treatment seeking",
+        "Stigma impacts disclosure",
+        "Company size influences benefits"
+      ],
+      "impact": "Highlighted importance of mental health awareness in workplaces."
+    }
+  }
+]
+

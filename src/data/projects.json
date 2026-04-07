@@ -1,0 +1,225 @@
+[
+    {
+        "id": 14,
+        "category": "NLP / Language Modeling",
+        "title": "Autocomplete & Next Word Prediction System",
+        "tags": ["Python", "NLP", "N-grams", "Language Modeling", "Streamlit"],
+        "github": "https://github.com/PragatiBagul/Autocomplete-NextWordPrediction",
+        "live": "https://autocomplete-nextwordprediction.streamlit.app",
+
+        "description": "Real-time autocomplete system using statistical language modeling to predict next words based on context.",
+
+        "longDescription": "Built an autocomplete and next-word prediction system using n-gram based language modeling. The system predicts the most probable next word given a sequence of input text, enabling real-time typing assistance similar to search engines and messaging platforms.",
+
+        "details": {
+            "overview": "Designed a real-time autocomplete system that predicts the next word using probabilistic language models trained on text corpora.",
+
+            "problem": "Given a sequence of words, predict the most likely next word in real time while maintaining low latency and high relevance.",
+
+            "approach": [
+            "Preprocessed text corpus with tokenization and cleaning",
+            "Built n-gram models (unigram, bigram, trigram)",
+            "Calculated conditional probabilities for next-word prediction",
+            "Implemented smoothing techniques to handle unseen sequences",
+            "Designed efficient lookup for real-time inference",
+            "Deployed using Streamlit for interactive UI"
+            ],
+
+            "insights": [
+            "Higher-order n-grams improve contextual accuracy but increase sparsity",
+            "Smoothing is essential to handle unseen word sequences",
+            "Trade-off between model complexity and inference latency",
+            "Real-time systems require optimized lookup rather than heavy models"
+            ],
+
+            "impact": "Built a functional real-time autocomplete system demonstrating core NLP concepts used in search engines and typing assistants."
+        }
+    },
+  {
+    "id": 1,
+    "category": "NLP",
+    "title": "Toxic Comment Classifier",
+    "tags": ["Python", "TF-IDF", "NLP", "Scikit-learn"],
+    "github": "https://github.com/PragatiBagul/Data-Science/tree/main/Toxic%20Comment%20Classifier",
+    "description": "Multi-label NLP system for toxic comment classification.",
+    "details": {
+      "overview": "Built a system to detect toxic, obscene, threat, insult, and identity-hate comments from Wikipedia discussions.",
+      "problem": "Classify comments into multiple toxicity categories with heavy class imbalance.",
+      "approach": [
+        "Text preprocessing: cleaning, tokenization, lemmatization",
+        "TF-IDF with unigrams and bigrams",
+        "One-vs-Rest classification using Logistic Regression and SVM",
+        "Handled imbalance using class weights"
+      ],
+      "insights": [
+        "Bigrams improved detection of toxic phrases",
+        "Rare classes like threat are hardest to detect",
+        "Linear models perform efficiently on sparse text"
+      ],
+      "impact": "Achieved strong AUC-ROC and built a scalable moderation pipeline."
+    }
+  },
+  {
+    "id": 2,
+    "category": "ML / Geospatial",
+    "title": "Geo-Spatial Travel Time Prediction",
+    "tags": ["Python", "Regression", "GeoPy", "Scikit-learn"],
+    "github": "https://github.com/PragatiBagul/Data-Science/tree/main/Geo-spatial%20Travel%20Time%20Prediction%20with%20Feature%20Engineering",
+    "description": "Predict travel time using engineered geospatial features.",
+    "details": {
+      "overview": "Built a regression model predicting trip duration using location-based features.",
+      "problem": "Convert raw latitude/longitude into meaningful predictive features.",
+      "approach": [
+        "Haversine distance calculation",
+        "Bearing and Manhattan distance features",
+        "Feature interactions",
+        "Tree-based regression models"
+      ],
+      "insights": [
+        "Haversine distance is strongest predictor",
+        "Direction adds useful signal",
+        "Tree models outperform linear models"
+      ],
+      "impact": "Demonstrated importance of feature engineering in geospatial ML systems."
+    }
+  },
+  {
+    "id": 3,
+    "category": "ML / Finance",
+    "title": "Credit Risk Modeling with XGBoost",
+    "tags": ["Python", "XGBoost", "Finance", "AUC-ROC"],
+    "github": "https://github.com/PragatiBagul/Data-Science/tree/main/XGBoost%20on%20(Give%20Me%20Some%20Credit%20Competition)",
+    "description": "Predict loan default risk using gradient boosting.",
+    "details": {
+      "overview": "Built a credit scoring model predicting financial distress.",
+      "problem": "Handle severe class imbalance in financial datasets.",
+      "approach": [
+        "Data cleaning and imputation",
+        "XGBoost modeling",
+        "Hyperparameter tuning",
+        "Class imbalance handling using scale_pos_weight"
+      ],
+      "insights": [
+        "Delinquency history is strongest predictor",
+        "Income and age significantly influence risk",
+        "Class imbalance handling is critical"
+      ],
+      "impact": "Improved risk prediction accuracy for financial decision-making."
+    }
+  },
+  {
+    "id": 4,
+    "category": "ML",
+    "title": "Dry Bean Classification",
+    "tags": ["SVM", "KNN", "Classification"],
+    "github": "https://github.com/PragatiBagul/Data-Science/tree/main/Dry%20Bean%20Dataset",
+    "description": "Multi-class classification of bean varieties.",
+    "details": {
+      "overview": "Classified 7 bean types using morphological features.",
+      "problem": "Differentiate classes with overlapping features.",
+      "approach": [
+        "Feature scaling",
+        "Model comparison (KNN, SVM, Logistic Regression)",
+        "Confusion matrix evaluation"
+      ],
+      "insights": [
+        "Shape features are highly discriminative",
+        "SVM performs best",
+        "Scaling improves KNN significantly"
+      ],
+      "impact": "Demonstrated effectiveness of ML in agricultural classification."
+    }
+  },
+  {
+    "id": 5,
+    "category": "Unsupervised Learning",
+    "title": "PCA on Wine Dataset",
+    "tags": ["PCA", "Dimensionality Reduction"],
+    "github": "https://github.com/PragatiBagul/Data-Science/tree/main/PCA%20on%20Wine%20Dataset",
+    "description": "Reduce dimensionality for visualization and clustering.",
+    "details": {
+      "overview": "Reduced 13 features into 2D space for visualization.",
+      "problem": "Visualize high-dimensional chemical data.",
+      "approach": [
+        "Standardization",
+        "PCA decomposition",
+        "Scree plot analysis",
+        "2D visualization"
+      ],
+      "insights": [
+        "Wine classes are separable in PCA space",
+        "Few features explain majority variance",
+        "Feature redundancy exists"
+      ],
+      "impact": "Improved interpretability of high-dimensional datasets."
+    }
+  },
+  {
+    "id": 6,
+    "category": "Clustering",
+    "title": "DBSCAN Customer Segmentation",
+    "tags": ["DBSCAN", "Clustering"],
+    "github": "https://github.com/PragatiBagul/Data-Science/tree/main/DBSCAN%20on%20Wholesale%20Customers%20Dataset",
+    "description": "Segment customers using density-based clustering.",
+    "details": {
+      "overview": "Clustered customers based on spending behavior.",
+      "problem": "Identify natural groupings without predefined clusters.",
+      "approach": [
+        "Feature scaling",
+        "K-distance plot for epsilon",
+        "DBSCAN clustering"
+      ],
+      "insights": [
+        "DBSCAN detects outliers effectively",
+        "Clusters represent customer segments",
+        "Better than K-Means for irregular shapes"
+      ],
+      "impact": "Enabled meaningful customer segmentation for business insights."
+    }
+  },
+  {
+    "id": 7,
+    "category": "EDA",
+    "title": "Adult Census Income Analysis",
+    "tags": ["EDA", "Visualization"],
+    "github": "https://github.com/PragatiBagul/Data-Science/blob/main/EDA%20on%20Adults%20Census%20Income/EDA%20on%20Adults%20Census%20Income.ipynb",
+    "description": "Analyze income inequality factors.",
+    "details": {
+      "overview": "Explored demographic factors affecting income.",
+      "problem": "Identify drivers of income >50K.",
+      "approach": [
+        "Univariate and bivariate analysis",
+        "Correlation and categorical analysis"
+      ],
+      "insights": [
+        "Education is strongest predictor",
+        "Gender disparity is significant",
+        "Occupation impacts income heavily"
+      ],
+      "impact": "Provided insights into socioeconomic inequality."
+    }
+  },
+  {
+    "id": 8,
+    "category": "EDA",
+    "title": "Mental Health in Tech Survey",
+    "tags": ["EDA", "Survey Analysis"],
+    "github": "https://github.com/PragatiBagul/Data-Science/tree/main/EDA%20on%20Mental%20Health%20in%20Tech%20Survey",
+    "description": "Analyze workplace mental health trends.",
+    "details": {
+      "overview": "Studied mental health trends in tech professionals.",
+      "problem": "Understand treatment patterns and employer support.",
+      "approach": [
+        "Data cleaning",
+        "Categorical analysis",
+        "Cross-feature comparisons"
+      ],
+      "insights": [
+        "Employer support increases treatment seeking",
+        "Stigma impacts disclosure",
+        "Company size influences benefits"
+      ],
+      "impact": "Highlighted importance of mental health awareness in workplaces."
+    }
+  }
+]
