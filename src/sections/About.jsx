@@ -64,7 +64,7 @@ export default function About() {
 
         <div className="flex flex-wrap gap-3">
           <a
-            href="https://www.linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/pragati-prashant-bagul/"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700
@@ -74,7 +74,7 @@ export default function About() {
           </a>
 
           <a
-            href="https://github.com/your-github"
+            href="https://github.com/PragatiBagul"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700
@@ -84,7 +84,7 @@ export default function About() {
           </a>
 
           <a
-            href="https://bagulpragati.medium.com"
+            href="https://medium.com/@bagulpragati"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700
