@@ -149,16 +149,17 @@ export default function ProjectCard({ project, onClick }) {
 
   {/* GitHub */}
   {project.github && (
-    <a
-      href={project.github}
-      target="_blank"
-      rel="noreferrer"
-      onClick={(e) => e.stopPropagation()}
-      className="text-gray-500 hover:text-black"
-    >
-      <Github size={18} />
-    </a>
-  )}
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noreferrer"
+    title="View on GitHub"
+    onClick={(e) => e.stopPropagation()}
+    className="text-gray-500 hover:text-black"
+  >
+    <Github size={18} />
+  </a>
+)}
 
   {/* Live */}
   {project.live && (
@@ -166,6 +167,7 @@ export default function ProjectCard({ project, onClick }) {
       href={project.live}
       target="_blank"
       rel="noreferrer"
+      title="View Live Demo"
       onClick={(e) => e.stopPropagation()}
       className="text-gray-500 hover:text-black"
     >
