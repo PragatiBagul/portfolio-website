@@ -1,5 +1,43 @@
 [
     {
+        "id": 15,
+        "category": "Information Retrieval / Search Systems",
+        "title": "Large-Scale StackOverflow Search & Ranking System",
+        "tags": ["Python", "Information Retrieval", "BM25", "FAISS", "XGBoost", "NLP", "Search Systems"],
+        "github": "https://github.com/PragatiBagul/stackoverflow-search",
+        "live": "https://stackoverflow-search.streamlit.app",
+        "description": "Built a large-scale hybrid search and ranking system combining lexical, semantic, and learning-to-rank techniques to retrieve and rank relevant StackOverflow answers.",
+
+        "longDescription": "Designed and implemented an end-to-end search engine pipeline inspired by real-world systems like Google Search and recommendation platforms. The system retrieves candidate documents using BM25 and dense vector search (FAISS), followed by a machine learning-based reranking stage using XGBoost. It effectively combines lexical matching, semantic understanding, and feature-based ranking to return highly relevant results for user queries.",
+
+        "details": {
+            "overview": "Developed a multi-stage hybrid retrieval and ranking system that mimics production-grade search pipelines using a combination of classical IR, dense retrieval, and learning-to-rank techniques.",
+
+            "problem": "Given a natural language query, retrieve and rank the most relevant StackOverflow questions and answers efficiently while balancing precision, recall, and latency.",
+
+            "approach": [
+                "Preprocessed StackOverflow dataset (Questions + Answers) with HTML cleaning, normalization, and tokenization",
+                "Implemented BM25-based lexical retrieval to fetch initial candidate documents",
+                "Built dense vector embeddings using Sentence Transformers and indexed them using FAISS for semantic retrieval",
+                "Designed a hybrid retrieval mechanism combining BM25 and dense search results",
+                "Engineered ranking features including BM25 scores, embedding similarity, and metadata signals",
+                "Trained an XGBoost learning-to-rank model to produce final relevance rankings",
+                "Evaluated system performance using metrics such as Recall@k, MRR@k, and nDCG@k",
+                "Designed modular pipeline for scalability and experimentation"
+            ],
+
+            "insights": [
+                "Hybrid retrieval (BM25 + dense embeddings) significantly improves recall over individual methods",
+                "Lexical models excel at exact keyword matching, while dense models capture semantic similarity",
+                "Learning-to-rank models effectively combine multiple weak signals into a strong ranking function",
+                "Evaluation metrics like nDCG and MRR are critical to understanding ranking quality beyond simple accuracy",
+                "Efficient indexing and candidate generation are crucial for scaling search systems"
+            ],
+
+            "impact": "Built a production-style search and ranking system demonstrating core principles used in large-scale search engines and recommendation systems, showcasing strong understanding of retrieval pipelines, ranking models, and evaluation techniques."
+        }
+    },
+    {
         "id": 14,
         "category": "NLP / Language Modeling",
         "title": "Autocomplete & Next Word Prediction System",
